@@ -1,0 +1,19 @@
+{
+  "name": "@artemis/mylib",
+  "version": "1.0.3",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test:dev": "npx mocha -w --exit test/",
+    "test": "npx mocha --parallel test/",
+    "test:cov": "npx nyc --check-coverage --instrument --reporter=html --reporter=text npm test",
+    "start": "node src/"
+  },
+  "author": "Luiz Felipe",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.0.2",
+    "nyc": "^15.1.0",
+    "sinon": "^11.1.1"
+  }
+}
